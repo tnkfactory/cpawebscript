@@ -1,5 +1,4 @@
-# cpawebscript
-#Web CPA 연동 가이드 (script 방식)
+## Web CPA 연동 가이드 (script 방식)
 
 1. 랜딩 페이지(이벤트 페이지)에 아래 스크립트를 추가 합니다.
 
