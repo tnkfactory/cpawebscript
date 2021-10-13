@@ -3,13 +3,13 @@
 1. 랜딩 페이지(이벤트 페이지)에 아래 스크립트를 추가 합니다.
 
 ```
-<script src="//api3.tnkfactory.com/tnk/js/tnk-webapi-cpatrack.1.4.js"></script>
+<script src="https://api3.tnkfactory.com/tnk/js/tnk-webapi-cpatrack.1.4.js"></script>
 ```
 2. 액션(미션)을 완료하는  페이지에 아래 스크립트를 추가합니다.
 
 그리고 액션(미션)을 완료하는 시점에  TnkSession.actionCompleted(); 함수를 호출합니다.
 ```
-<script src="//api3.tnkfactory.com/tnk/js/tnk-webapi-cpatrack.1.4.js"></script>
+<script src="https://api3.tnkfactory.com/tnk/js/tnk-webapi-cpatrack.1.4.js"></script>
 
 <script>
 
