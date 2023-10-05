@@ -21,10 +21,10 @@
 
 ### 3. 광고 URL 설정
 
- TNK 네트워크 APP 내 지면에서 광고의 배너를 클릭하면 광고 URL로 이동을 합니다.  
- 이때 URL 뒤에 TNK에서 생성한 클릭ID가 전달 됩니다.  
+ TNK 네트워크 APP 내 지면에서 광고의 배너를 클릭하면 TNK 서버를 거쳐 광고 URL로 이동을 합니다.  
+ 이때 URL 뒤에 TNK 서버에서 생성한 클릭ID가 함께 전달 됩니다.  
  클릭ID는 매체,광고,기기정보를 암호화한 256byte이내의 영문+숫자의 조합입니다.  
- 클릭ID는 미션완료시 TNK서버로 전송해야 하므로 중간에 유실 되지않도록 구현해야 합니다.  
+ 클릭ID는 미션완료시 TNK 서버로 전송해야 하므로 중간에 유실 되지않도록 구현해야 합니다.  
   <br/> 
 - URL : 광고 URL
 - Method : GET
@@ -35,9 +35,11 @@
 | adkey | 256 | 256byte 이내의 영문,숫자의 조합의 암호화 된 문자열 |
 
 - Response : redirect
-  
-(예)  
-https://www.web-cpa-event-join.com/join/?adkey={클릭ID}
+- Example :  
+https://www.web-cpa-event-join.com/join/?adkey={클릭ID} 
+```
+https://www.web-cpa-event-join.com/join/?adkey=85d75c07f20bf447f1e09efe88163864f4fe0684124fd2
+```
 <br/><br/>
 
 ### 4. Postback 설정
@@ -47,24 +49,30 @@ https://www.web-cpa-event-join.com/join/?adkey={클릭ID}
 <br/>
 
 - Method : GET,POST
-- Postback URL (HTTPS) :
+- Postback URL (HTTPS) :  
 https://ads.tnkad.net/tnk/psb.postback.main  
 - Parameters :  
 
 | 파라미터 명 | 최대길이 | 설명 |
 | --- | --- | --- |
-| cbid | 256 | 광고URL에 전달된 {클릭ID} 값. |
+| cbid | 256 | 광고URL에 전달된 {클릭ID} 값. (광고 URL에 adkey로 전달된 값) |
 | chk\_cd | 32 | md5(TNK + 클릭ID) 파라미터 검증 코드 |
 | lb | 10 | 상수 = s2s |
 | event | 20 | 상수 = action\_complete |
 
-
-(예)  
-https://ads.tnkad.net/tnk/psb.postback.main?lb=s2s&event=action_complete&cbid={클릭ID}&chk_cd={검증코드}
+  
+- Example :  
+https://ads.tnkad.net/tnk/psb.postback.main?lb=s2s&event=action_complete&cbid={클릭ID}&chk_cd={검증코드} 
+```
+https://ads.tnkad.net/tnk/psb.postback.main?lb=s2s&event=action_complete&cbid=85d75c07f20bf447f1e09efe88163864f4fe0684124fd2&chk_cd=eaf940ff0c6dd35b5c67b2d40b39782f  
+```
 
 - Response Type : text/html  
 - Response Value :  S 또는 F
-
+- Example :    
+```
+S
+```
 | 응답값 | 설명 |
 | --- | --- |
 | S | 성공 |
