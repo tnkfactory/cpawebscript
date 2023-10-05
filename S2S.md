@@ -1,3 +1,5 @@
+## Web CPA 연동 가이드 (Server to Server 방식)
+
 ### 1. 개요
 
 본 문서는 TNK 네트워크을 통한 CPA(미션달성) 광고 진행시 구현해야 할 내용을 설명하고 있습니다.
@@ -6,7 +8,7 @@
 
 
 
-### 2. 네트워크 흐름
+### 2. 흐름도
 
 ![img](https://cdn4.tnkfactory.com/tnk/shop/12334.jpg)
 
@@ -19,7 +21,7 @@
 
 
 
-### 3. 광고 URL 설정
+### 3. 광고 URL 
 
  TNK 네트워크 APP 내 지면에서 광고의 배너를 클릭하면 TNK 서버를 거쳐 광고 URL로 이동을 합니다.  
  이때 URL 뒤에 TNK 서버에서 생성한 클릭ID가 함께 전달 됩니다.  
@@ -42,7 +44,7 @@ https://your-site-url?a=1&b=2&adkey=85d75c07f20bf447f1e09efe88163864f4fe0684124f
 ```
 <br/><br/>
 
-### 4. Postback 설정
+### 4. Postback 
 
  유저가 광고참여 후 미션을 완료 했을때, 광고주 서버에서 TNK 서버로 클릭ID를 전송합니다.  
  추후 실적 비교 및 CS 확인 등을 위해 클릭ID는 DB에 참여 데이터와 함께 저장 해주세요.
@@ -89,9 +91,9 @@ S
 
 <br/><br/>
 ### 6. 기술 문의
-
+연동 중 문의사항이나 지원이 필요한 경우 아래 이메일 또는 연락하고 계신 담당자에 문의 바랍니다.  
 tech@tnkfactory.com  
-support@tnkfactory.com
+support@tnkfactory.com  
 
 
 
