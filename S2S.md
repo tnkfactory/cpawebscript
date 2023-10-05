@@ -49,7 +49,7 @@ https://www.web-cpa-event-join.com/join/?adkey={클릭ID}
 - Postback URL (HTTPS) :  
 https://ads.tnkad.net/tnk/psb.postback.main  
 
-- Parameters :
+- Parameters :  
 
 | 파라미터 명 | 최대길이 | 설명 |
 | --- | --- | --- |
