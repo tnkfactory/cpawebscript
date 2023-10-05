@@ -28,8 +28,8 @@
   <br/> 
 - URL : 광고 URL
 - Method : GET
-- Parameters :
-  
+- Parameters :  
+
 | 파라미터 명 | 최대길이 | 설명 |
 | --- | --- | --- |
 | adkey | 256 | 256byte 이내의 영문,숫자의 조합의 암호화 된 문자열 |
