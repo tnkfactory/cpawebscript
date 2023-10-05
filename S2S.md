@@ -32,13 +32,13 @@
 
 | 파라미터 명 | 최대길이 | 설명 |
 | --- | --- | --- |
-| adkey | 256 | 256byte 이내의 영문,숫자의 조합의 암호화 된 문자열 |
+| adkey | 100 | 100 byte 이내의 영문,숫자의 조합의 암호화 된 문자열 |
 
 - Response : redirect
 - Example :  
-https://www.web-cpa-event-join.com/join/?adkey={클릭ID} 
+https://your-site-url?a=1&b=2&adkey={클릭ID} 
 ```
-https://www.web-cpa-event-join.com/join/?adkey=85d75c07f20bf447f1e09efe88163864f4fe0684124fd2
+https://your-site-url?a=1&b=2&adkey=85d75c07f20bf447f1e09efe88163864f4fe0684124fd2
 ```
 <br/><br/>
 
@@ -55,10 +55,10 @@ https://ads.tnkad.net/tnk/psb.postback.main
 
 | 파라미터 명 | 최대길이 | 설명 |
 | --- | --- | --- |
-| cbid | 256 | 광고URL에 전달된 {클릭ID} 값. (광고 URL에 adkey로 전달된 값) |
+| cbid | 100 | 광고URL에 전달된 {클릭ID} 값. (광고 URL에 adkey로 전달된 값) |
 | chk\_cd | 32 | md5(TNK + 클릭ID) 파라미터 검증 코드 |
-| lb | 10 | 상수 = s2s |
-| event | 20 | 상수 = action\_complete |
+| lb | 3 | 상수 = s2s |
+| event | 15 | 상수 = action\_complete |
 
   
 - Example :  
