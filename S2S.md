@@ -46,10 +46,9 @@ https://www.web-cpa-event-join.com/join/?adkey={클릭ID}
  추후 실적 비교 및 CS 확인 등을 위해 클릭ID는 DB에 참여 데이터와 함께 저장 해주세요.
 <br/>
 
-- Method : GET,POST  
-- Postback URL (HTTPS) :  
+- Method : GET,POST
+- Postback URL (HTTPS) :
 https://ads.tnkad.net/tnk/psb.postback.main  
-
 - Parameters :  
 
 | 파라미터 명 | 최대길이 | 설명 |
