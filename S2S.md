@@ -73,6 +73,7 @@ https://ads.tnkad.net/tnk/psb.postback.main?lb=s2s&event=action_complete&cbid=85
 ```
 S
 ```
+   
 | 응답값 | 설명 |
 | --- | --- |
 | S | 성공 |
