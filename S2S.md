@@ -59,14 +59,14 @@ https://ads.tnkad.net/tnk/psb.postback.main
 | --- | --- | --- |
 | cbid | 100 | 광고URL에 전달된 {클릭ID} 값. (광고 URL에 adkey로 전달된 값) |
 | chk\_cd | 32 | md5(TNK + 클릭ID) 파라미터 검증 코드 |
-| lb | 3 | 상수 = s2s |
+| lb | 3 | 상수 = s2s2 |
 | event | 15 | 상수 = action\_complete |
 
   
 - Example :  
-https://ads.tnkad.net/tnk/psb.postback.main?lb=s2s&event=action_complete&cbid={클릭ID}&chk_cd={검증코드} 
+https://ads.tnkad.net/tnk/psb.postback.main?lb=s2s2&event=action_complete&cbid={클릭ID}&chk_cd={검증코드} 
 ```
-https://ads.tnkad.net/tnk/psb.postback.main?lb=s2s&event=action_complete&cbid=85d75c07f20bf447f1e09efe88163864f4fe0684124fd2&chk_cd=eaf940ff0c6dd35b5c67b2d40b39782f  
+https://ads.tnkad.net/tnk/psb.postback.main?lb=s2s2&event=action_complete&cbid=85d75c07f20bf447f1e09efe88163864f4fe0684124fd2&chk_cd=eaf940ff0c6dd35b5c67b2d40b39782f  
 ```
 
 - Response Type : text/html  
