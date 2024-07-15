@@ -58,7 +58,7 @@ https://ads.tnkad.net/tnk/psb.postback.main
 | 파라미터 명 | 최대길이 | 설명 |
 | --- | --- | --- |
 | cbid | 100 | 광고URL에 전달된 {클릭ID} 값. (광고 URL에 adkey로 전달된 값) |
-| chk\_cd | 32 | md5(TNK + 클릭ID) 파라미터 검증 코드 |
+| chk\_cd | 32 | md5(TNK + 클릭ID) 파라미터 검증 코드 (md5 hash string) |
 | lb | 3 | 상수 = s2s2 |
 | event | 15 | 상수 = action\_complete |
 
